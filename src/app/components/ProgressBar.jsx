@@ -40,7 +40,7 @@ export function ProgressBar({ progress }) {
         }}
         transition={{
           duration: 1,
-          repeat,
+          repeat: Infinity,
           ease: 'linear',
         }}
       />

@@ -8,9 +8,6 @@ import {
   FormProvider,
   useFormContext,
   useFormState,
-  ControllerProps,
-  type FieldPath,
-  type FieldValues,
 } from "react-hook-form";
 
 import { cn } from "./utils";
@@ -18,21 +15,11 @@ import { Label } from "./label";
 
 const Form = FormProvider;
 
-type FormFieldContextValue<
-  TFieldValues extends FieldValues = FieldValues,
-  TName extends FieldPath<TFieldValues> = FieldPath<TFieldValues>,
-> = {
-  name: TName;
-};
-
 const FormFieldContext = React.createContext(
   {},
 );
 
-const FormField = <
-  TFieldValues extends FieldValues = FieldValues,
-  TName extends FieldPath<TFieldValues> = FieldPath<TFieldValues>,
->({
+const FormField = ({
   ...props
 }) => {
   return (
@@ -63,8 +50,6 @@ const useFormField = () => {
     formMessageId: `${id}-form-item-message`,
     ...fieldState,
   };
-};
-
 };
 
 const FormItemContext = React.createContext(
