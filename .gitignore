@@ -1,0 +1,98 @@
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# IDE and Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# Temporary Files
+*.tmp
+*.temp
+*.log
+*.bak
+*.cache
+.temp/
+tmp/
+temp/
+
+# Build Artifacts
+dist/
+build/
+out/
+*.min.js
+*.min.css
+
+# Node.js (if development tools are added later)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+.npm
+.yarn
+.pnp.*
+
+# Python (if scripts are added later)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+
+# Figma Export/Cache (if using Figma plugins)
+.figma/
+figma-cache/
+*.fig.backup
+
+# Design System Exports (temporary exports)
+exports/
+assets/temp/
+screenshots/temp/
+
+# Documentation Build (if using generators)
+docs/build/
+.docusaurus/
+.cache/
+
+# Archives
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+
+# Sensitive Information
+.env
+.env.local
+.env.*.local
+secrets.json
+credentials.json
+
+# Test Coverage
+coverage/
+.nyc_output/
+
+# Misc
+*.diff
+*.patch
+*.orig
